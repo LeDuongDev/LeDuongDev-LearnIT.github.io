@@ -1,0 +1,226 @@
+/* -------------------------Desktops, large screens------------------------ */
+@media screen and (max-width:1200px){
+   #header{
+      width:90%;
+   }
+   #header .header-contact{
+      display:none;
+   }
+   #header .header-bar{
+      width:100%;
+   }
+   #header .header-nav{
+      padding-right:72px;
+      margin-left:70px;
+   }
+   #header .header-bar::before{
+      width:100%;
+   }
+   #banner .banner-desc h1{
+      font-size:56px;
+   }
+   .mg150{
+      margin:0 20px;
+   }
+   #register .register-form,
+   #register .register-desc{
+      width:442px;
+   }
+   #register .register-left{
+      padding-top:100px;
+      padding-bottom:114px;
+   }
+}
+/* -------------------------Small screens, laptops ------------------------ */
+@media screen and (max-width:1024px){
+   #header .header-logo{
+      padding-left:0;
+   }
+   #header .header-nav{
+      padding-right:0;
+      margin-left:63px;
+   }
+   #header .header-nav ul li{
+      margin-right:25px;
+   }
+   #banner .banner-desc{
+      width:100%;
+      text-align:center;
+   }
+   #banner .banner-desc h1{
+      font-size:48px;
+   }
+   #course .course-items{
+      width:calc(100%/2);
+      margin-bottom:30px;
+   }
+   #course .course-top h2::before{
+      width:15%;
+   }
+   #register .register-container{
+      flex-wrap:wrap;
+   }
+   #register .register-left, 
+   #register .register-right{
+      width:100%;
+   }
+   #register .register-button{
+      margin-left:auto;
+      margin-right:auto;
+   }
+}
+/* -------------------------iPads, Tablets ------------------------ */
+@media screen and (max-width:768px){
+   #header{
+      height:74px;
+   }
+   #header .header-menu{
+      display:block;
+      padding-right:50px;
+   }
+   #header .header-menu .menu-bars{
+      font-size:25px;
+   }
+   #header .header-nav{
+      display:none;
+   }
+   #header .header-logo{
+      padding-left:50px;
+   }
+   #header .header-logo span{
+      font-size:20px;
+   }
+   #banner .banner-desc h1{
+      font-size:38px;
+   }
+   #header .header-mobile{
+      display:block;
+      position:absolute;
+      bottom:-310%;
+      width:100%;
+   }
+   #header .header-mobile ul{
+      background-color:var(--ps-FFB606);
+   }
+   #header .header-mobile ul li{
+      padding:15px 10px;
+   }
+   #header .header-mobile ul li a{
+      text-decoration: none;
+   font-weight:700;
+   color:var(--ps-FFFFEF);
+   text-transform:uppercase;
+   transition:.3s ease;
+   display:block;
+   width:100%;
+   }
+   .mg150{
+      margin:0 50px;
+   }
+   #info{
+      position: relative;
+      padding-top:117px;
+   }
+   #info .info-box{
+      display:flex;
+      flex-wrap:wrap;
+   }
+   #info .info-item{
+      width:100%;
+      margin-bottom:30px;
+   }
+   #course .course-items{
+      width:100%;
+   }
+   #course .course-list{
+      flex-wrap:wrap;
+   }
+   #course .course-top h2::before{
+      width:20%;
+   }
+   #register .register-button{
+      margin-left:125px;
+   }
+   #register .register-desc h1,
+   #register .register-form h1{
+      font-size:24px;
+   }
+   #register .register-desc p{
+      margin-top:25px;
+   }
+   #register .register-form form{
+      overflow:hidden;
+   }
+   #register .register-button{
+      margin-top:25px;
+      margin-left:auto;
+      margin-right:auto;
+   }
+}
+/* -------------------------Mobile ------------------------ */
+@media screen and (max-width:480px){
+   #header{
+      height:60px;
+   }
+   #header .header-logo span{
+      font-size:15px;
+   }
+   #header .header-menu{
+      padding-right:20px;
+   }
+   #header .header-logo{
+      padding-left:20px;
+   }
+   #banner .banner-desc h1{
+      font-size:30px;
+   }
+   .mg150{
+      margin:0;
+      padding:0;
+   }
+   #info .info-content{
+      padding-left:0;
+   }
+   #header .header-mobile{
+      bottom:-380%;
+   }
+   
+   #info .info-item{
+      margin-left:0;
+      margin-right:0;
+   }
+   #info .info-icon{
+      margin-left:50px;
+   }
+   #course .course-items{
+      width:100%;
+   }
+   #course .course-top h2::before{
+      width:20%;
+   }
+   #register .register-content{
+      width:100%;
+   }
+   #register .register-desc h1,
+   #register .register-form h1{
+      font-size:24px;
+   }
+   #register .register-desc p{
+      margin-top:25px;
+   }
+   #register .register-button{
+      margin-top:53px;
+      margin-left:auto;
+      margin-right:auto;
+   }
+   #register .register-form, 
+   #register .register-desc{
+      width:100%;
+   }
+   #register .register-form{
+      padding-top:146px;
+   }
+   #register .register-left{
+      padding-top:120px;
+   }
+}

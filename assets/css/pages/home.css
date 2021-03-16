@@ -1,0 +1,405 @@
+/* ---------------------------------HEADER------------------------------ */
+#header{
+   position: fixed;
+   top:5%;
+   left:50%;
+   transform:translateX(-50%);
+   width:1318px;
+   height:104px;
+   z-index: 10;
+   background-color:var(--ps-FFFFFF);
+   display:flex;
+   align-items:center;
+}
+#header .header-box {
+   display:flex;
+   align-items:center;
+   width:100%;
+   height:100%;
+}
+#header .header-bar{
+   display:flex;
+   align-items:center;
+   width:calc(100% - 279px);
+   height:100%;
+}
+#header .header-bar::before{
+   position: absolute;
+   display:block;
+   width:calc(100% - 279px);
+   height:100%;
+   content:'';
+   z-index: -1;
+   box-shadow: 0px 20px 49px rgb(0 0 0 / 67%);
+}
+.shadow::before{
+   box-shadow: 0px 20px 49px rgb(0 0 0 / 17%) !important;
+}
+#header .header-logo{
+   display:flex;
+   align-items:center;
+   padding-left:76px;
+}
+#header .header-logo span{
+   font-size:30px;
+   text-transform: uppercase;
+   font-weight:900;
+   margin-left:3px;
+}
+#header .header-nav{
+   padding-right:93px;
+   margin-left:120px;
+   position: relative;
+   display:block;
+}
+#header .header-nav ul{
+   display:flex;
+}
+#header .header-nav ul li {
+   margin-right:40px;
+}
+#header .header-nav ul li a{
+   text-decoration: none;
+   font-weight:700;
+   color:var(--ps-1A1A1A);
+   text-transform:uppercase;
+   transition:.3s ease;
+}
+#header .header-nav ul li:hover a{
+   color:var(--ps-FFB606);
+   cursor: pointer;
+}
+#header .header-contact{
+   width:279px;
+   height:100%;
+   background-color:var(--ps-FFB606) !important;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   color:var(--ps-FFFFEF);
+}
+#header .header-contact .header-call{
+   font-size:40px;
+   display:block;
+}
+#header .header-contact span{
+   font-size:18px;
+   padding-left:12px;
+   font-weight:500;
+   display:block;
+   position:relative;
+}
+#header .header-menu{
+   display: none;
+}
+#header .header-mobile{
+   display:none;
+}
+.hidden{
+   display:none !important;
+}
+/* ---------------------------------BANNER------------------------------ */
+#banner{
+   position: relative;
+}
+#banner .banner-box{
+   width:100%;
+   height:100vh;
+}
+#banner .banner-item{
+   background-image:url(/assets/image/banner/slider_background.jpg);
+   background-position: center center;
+   width:100%;
+   position:absolute;
+   top:0;
+   left:0;
+   height:100%;
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+#banner .banner-desc{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+}
+#banner .banner-desc h1{
+   font-size:72px;
+   color:var(--ps-FFFFEF);
+   font-weight:400;
+}
+#banner .banner-desc span{
+   padding:0 13px;
+   background-color:var(--ps-FFB606);
+}
+/* ---------------------------------INFO------------------------------ */
+#info{
+   position:absolute;
+   bottom:5%;
+   width:100%;
+}
+#info .info-box{
+   justify-content: center;
+   display:flex;
+}
+#info .info-content{
+   width:100%;
+   display:flex;
+   align-items:center;
+   height:100%;
+   padding-left:50px;
+}
+#info .info-item{
+   width:calc(100%/3);
+   margin:0 15px;
+   height:161px;
+   background-color:var(--ps-1A1A1A);
+   transition:.3s ease;
+}
+#info .info-title{
+   margin-left:20px;
+}
+#info .info-icon{
+   font-size:50px;
+   color:var(--ps-FFB606);
+   transition:.3s ease;
+
+}
+#info .info-title p{
+   font-size:25px;
+   color:var(--ps-FFFFFF);
+   margin-bottom:10px;
+}
+#info .info-title a{
+   text-decoration: none;
+   color:var(--ps-FFFFFF);
+}
+#info .info-item:hover{
+   cursor: pointer;
+   background-color:var(--ps-FFB606);
+}
+#info .info-item:hover .info-icon{
+   color:var(--ps-FFFFFF);
+}
+/* ---------------------------------COURSE------------------------------ */
+#course,
+#course .course-content{
+   position: relative;
+}
+#course .course-top{
+   text-align: center;
+   position: relative;
+
+}
+#course .course-title{
+   padding:0 15px;
+}
+#course .course-top h2{
+   padding-top:24px;
+   margin-bottom:6px;
+   font-size:36px;
+   font-weight:600;
+}
+#course .course-top h2::before{
+   position: absolute;
+   top: 0;
+   width:5%;
+   content:'';
+   border:1px solid var(--ps-FFB606);
+   left:50%;
+   transform: translateX(-50%);
+}
+#course .course-bottom{
+   margin-top:68px;
+}
+#course .course-list{
+   display:flex;
+   justify-content: center;
+}
+#course .course-items{
+   width:calc(100%/3);
+   padding:0 15px;
+}
+#course .course-img{
+   height:300px;
+}
+#course .course-img img{
+   width:100%;
+   height:100%;
+}
+#course .course-info{
+   padding:30px 0;
+   text-align: center;
+   background-color:var(--ps-F8F9FB);
+}
+#course .course-info h3{
+   margin-top:15px;
+   margin-bottom:5px;
+}
+#course .course-info .name{
+   text-decoration: none;
+   font-size:22px;
+   font-weight:600;
+   color:var(--ps-1A1A1A);
+   line-height: 1.2;
+}
+#course .course-info .meta{
+   font-size:14px;
+   font-weight:500;
+   opacity: .4;
+}
+#course .course-author{
+   display:flex;
+   align-items:center;
+   background-color:var(--ps-EAEBEC);
+   height:67px;
+   width:calc(100% - 20%);
+}
+#course .course-author .author-img{
+   padding-left:30px;
+}
+#course .course-author .author-img img{
+   display:block;
+   border-radius:50%;
+}
+#course .course-author .author-name{
+   margin-left:15px;
+   font-weight:600;
+}
+#course .course-author .author-price{
+   position:absolute;
+   right:0;
+   display:block;
+   width:20%;
+   height:67px;
+   text-align:center;
+   line-height:67px;
+   background-color:var(--ps-FFB606);
+
+}
+#course .course-author .author-price p{
+   color:var(--ps-FFFFFF);
+   font-size:18px;
+   font-weight:600;
+}
+/* ---------------------------------REGISTER------------------------------ */
+#register .register-container{
+   display:flex;
+   align-items:center;
+}
+#register .register-left,
+#register .register-right{
+   width:calc(100%/2);
+   position: relative;
+}
+#register .register-left{
+   padding-top:156px;
+   padding-bottom:115px;
+   background-color:var(--ps-FFB606);
+   display:flex;
+   justify-content: center;
+}
+#register .register-right{
+   height:100%;
+   background:url(/assets/image/latest/latest_2.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-position:center center;
+      
+   display:flex;
+   justify-content: center;
+}
+#register .register-right::after{
+   content:'';
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   background-color:var(--ps-EAEBEC);
+   opacity: 0.23;
+}
+#register .register-content{
+   z-index: 1;
+}
+
+#register .register-desc{
+   width:522px;
+   text-align: center;
+}
+#register .register-desc h1{
+   font-size:36px;
+   margin-bottom:16px;
+   line-height:1.6;
+   color:var(--ps-FFFFFF);
+}
+#register .register-desc span{
+   color:var(--ps-1A1A1A);
+}
+#register .register-desc p{
+   margin-top:32px;
+   padding:0 25px;
+   font-weight:500;
+   color:var(--ps-FFFFFF);
+   line-height:2.29;
+}
+#register .register-button{
+   margin-top:65px;
+   width:202px;
+   height:48px;
+   background-color:var(--ps-1A1A1A);
+   margin-left:160px;
+   margin-right:160px;
+   line-height:48px;
+}
+#register .register-button a{
+   text-decoration: none;
+   color:var(--ps-FFFFFF);
+   text-transform:uppercase;
+}
+#register .register-form{
+   width:522px;
+   text-align: center;
+   padding-top:156px;
+   padding-bottom:163px;
+}
+#register .register-form h1 {
+   font-size:36px;
+   color:var(--ps-1A1A1A);
+   margin-bottom:8px;
+   font-weight:500;
+}
+#register .register-form form{
+   margin-top:57px;
+}
+#register .register-form input[type='text']{
+   padding-left:25px;
+   border:2px solid var(--ps-FFFFFF);
+   margin-bottom:24px;
+   height:42px;
+   width:100%;
+   outline:none
+}
+#register .register-form input[type='text']:focus{
+   border:2px solid var(--ps-FFB606);
+}
+#register .register-form .search-btn{
+   height:42px;
+   width:100%;
+   border:2px solid var(--ps-FFB606);
+   background-color:var(--ps-FFB606);
+   line-height:42px;
+}
+#register .register-form .search-btn a{
+   text-decoration: none;
+   color:var(--ps-FFFFFF);
+   text-transform: uppercase;
+}
+#register .register-form .group{
+   overflow: hidden;
+}
+#register .register-form .search-btn:hover,
+#register .register-button:hover{
+   cursor: pointer;
+   box-shadow: 0px 10px 20px rgb(0 0 0 / 20%);
+}
