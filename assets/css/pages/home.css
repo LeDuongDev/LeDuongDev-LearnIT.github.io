@@ -107,7 +107,7 @@
    height:100vh;
 }
 #banner .banner-item{
-   background-image:url(.../image/banner/slider_background.jpg);
+   background-image:url(/image/banner/slider_background.jpg);
    background-position: center center;
    width:100%;
    position:absolute;
@@ -301,7 +301,7 @@
 }
 #register .register-right{
    height:100%;
-   background:url(.../image/latest/latest_2.jpg);
+   background:url(/image/latest/latest_2.jpg);
       background-repeat: no-repeat;
       background-size:cover;
       background-position:center center;
