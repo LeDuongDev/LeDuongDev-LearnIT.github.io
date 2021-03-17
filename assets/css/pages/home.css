@@ -107,7 +107,7 @@
    height:100vh;
 }
 #banner .banner-item{
-   background-image:url(/assets/image/banner/slider_background.jpg);
+   background-image:url(assets/image/banner/slider_background.jpg);
    background-position: center center;
    width:100%;
    position:absolute;
